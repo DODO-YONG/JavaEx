@@ -4,12 +4,12 @@ package com.javaex.basics;
 public class Types {
 
 	public static void main(String[] args) {
-		integerTypes();
-		floatTypes();
-		booleanEx();
-		charEx();
-		constantEx();
-		implicitCasting();
+//		integerTypes();
+//		floatTypes();
+//		booleanEx();
+//		charEx();
+//		constantEx();
+//		implicitCasting();
 		explicitCasting();
 	}
 	// 명시적 형변환
