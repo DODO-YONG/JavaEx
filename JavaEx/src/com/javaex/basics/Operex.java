@@ -18,7 +18,7 @@ public class Operex {
 		message = a % 2 == 0? "짝수": "홀수";
 		System.out.println(message);
 		
-		int score = 85;
+		int score = 70;
 		
 		// 80점 이상이면 Good
 		// 80~50 이면 Pass
