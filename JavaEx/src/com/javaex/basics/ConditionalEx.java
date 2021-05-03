@@ -14,6 +14,10 @@ public class ConditionalEx {
 
 	}
 	private static void switchEx3() {
+		//	코드 값을 문자열로 전달하는 경우
+		//	-> 오타 발생 가능, 원하지않는 입력이 넘어오는 경우가 있다
+		//	코드의 집합을 별도 선언, 입력 값을 제한해야 한다
+		// -> TODO: enum 열거형으로 재작성을 해 볼 
 		String day = "MONDAY";
 		String act = "";
 		
