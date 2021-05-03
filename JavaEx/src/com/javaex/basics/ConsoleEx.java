@@ -14,6 +14,7 @@ public class ConsoleEx {
 		
 		// print 메서드 -> 출력 후 개행 안함
 		// println 매서드 -> 출력 후 개행 함
+		// printf 메서드 -> 형식화된 출력 -> TODO : 뒤쪽 String 항목에서 정
 		System.out.print("Hello ");
 		System.out.println("Java");
 		
