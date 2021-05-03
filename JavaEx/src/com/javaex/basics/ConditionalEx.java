@@ -6,8 +6,126 @@ public class ConditionalEx {
 
 	public static void main(String[] args) {
 //		ifElseEx();
-		ifElseEx2();
+//		ifElseEx2();
+//		ifElseEx3();
+//		switchEx();
+//		switchEx2();
+		switchEx3();
 
+	}
+	private static void switchEx3() {
+		String day = "MONDAY";
+		String act = "";
+		
+		//MON ~ Thursday : act <- 열공
+		//Friday : act <- 불금
+		//	Saturday : act <- 주말
+		//	Sunday : act <- 휴식
+		// 나머지 : act <- ?
+		switch(day) {
+		case "MONDAY":
+		case "TUSEDAY":
+		case "WEDENSDAY":
+		case "THURSDAY":
+			act = "열공";
+			break;
+		case "FRIDAY":
+			act = "불금";
+			break;
+		case "SATURDAY":
+			act = "주말";
+			break;
+		case "SUNDAY":
+			act = "휴식";
+			break;
+		default:
+			act = "?";
+		}
+		System.out.println(day + "에는 " + act);
+	
+		
+	}
+	private static void switchEx2() {
+		// 월을 입력 받아
+		// 1, 3, 5, 7,8, 10, 12월 -> 31일
+		// 4, 6, 9, 11 -> 30일
+		// 2 -> 28일
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("월을 입력");
+		
+		int month = scanner.nextInt();
+		
+		switch(month) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			//	month == 1 || month == 3 || ...
+			System.out.println("31");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("30일");
+			break;
+		case 2:
+			System.out.println("28일");
+			break;
+		default:
+			System.out.println("다른요일을 입력하세요");
+		}
+		scanner.close();
+		
+	}
+	private static void switchEx() {
+		//	ifElseEx3 를 switch ansdmfh aksemfdj qhqtlek.
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("과목 1. Java 2. C, 3. C++ 4. 파이썬");
+		int subject = scanner.nextInt();
+		
+		// switch ~ case 문으로 구현
+		// 특별한 경우가 아니면 case문과 break 문 쌍으로 생각하자
+		switch(subject) {
+		case 1: //	subject == 1
+			System.out.println("R101");
+			break;
+		case 2: // subject == 2
+			System.out.println("R202");
+			break;
+		case 3: // subject ==3
+			System.out.println("R303");
+			break;
+		case 4:
+			System.out.println("R404");
+			break;
+		default : //	else 문 -> 위에 일치하는 값이 없을 때 수행
+			System.out.println("관리자에게 문의하세요");
+		}
+		scanner.close();
+	}
+	private static void ifElseEx3() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("과목 1. Java 2. C, 3. C++ 4. 파이썬");
+		int subject = scanner.nextInt();
+		
+		
+		if (subject == 1) {
+			System.out.println("R101");
+		} else if (subject == 2) {
+			System.out.println("R202");
+		} else if (subject == 3) {
+			System.out.println("R303");
+		} else if (subject == 4) {
+			System.out.println("R404");
+		} else {
+			System.out.println("상담원에게 문의하세");
+		}
+		
+		scanner.close();
 	}
 	private static void ifElseEx2() {
 		//	정수 입력
