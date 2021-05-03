@@ -22,6 +22,7 @@ public class Operex {
 		System.out.println("b1|b2: " + Integer.toBinaryString(result));
 		result = ~b1; // 비트 논리 부정 : 1 <-> 0
 		System.out.println("~b1: " + Integer.toBinaryString(result));
+		// ~b1: 11111111111111111111111111110010 8자리씩 끊어서 4자리(비트는 8단위로 끊고 4칸으로 표현)
 		
 	}
 	
