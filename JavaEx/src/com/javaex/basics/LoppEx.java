@@ -12,9 +12,30 @@ public class LoppEx {
 //		forLoopEx();
 //		continueEx();
 //		breakEx();
-		randomEx();
+//		randomEx();
+		practiceEx();
 	}
-	
+	private static void practiceEx() {
+//		Scanner scanner = new Scanner(System.in);
+//		System.out.println("구구단 숫자를 입력하세요");
+//		int dan = scanner.nextInt();
+//		for(int num = 1; num < 10; num++) {
+//			System.out.println(dan + "*" + num + "=" + (dan * num));
+//		}
+		for(int num = 1; num < 10; num++) {
+			for(int num2 = 2; num2 < 10; num2++) {
+				System.out.print(num2 + "*" + num + "=" + (num * num2) + " ");
+			}
+			System.out.println();
+		}
+		for (int num = 1; num < 7; num++) {
+			for (int num2 = 1; num2 <= num; num2++) {
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+	}
 	private static void randomEx() {
 		//	1부터 45까지의 난수 6개 출력
 		// for문 버전
