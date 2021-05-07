@@ -20,6 +20,11 @@ public class ExceptionEx {
 			te.divide(100, 0);
 			te.executeRuntimeException();
 			te.executeException(); //IOException -> Checked -> 반드시 예외 처리 필
+		} catch (CustomArithmeticException e) {
+			System.err.println("사용자 정의 예외:" + e.getMessage());
+			//	상황 정보 확인
+			System.err.println("num1" + e.getNum1());
+			System.err.println("num1" + e.getNum2());
 		} catch (IOException e) {
 			System.err.println("예외 메세지:" + e.getMessage());		
 		} catch (RuntimeException e) {

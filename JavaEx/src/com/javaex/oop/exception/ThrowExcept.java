@@ -20,9 +20,18 @@ public class ThrowExcept {
 	}
 	
 	public double divide(int num1, int num2) {
-		double result;
+		double result = 0;
 		
+		try {
+		//	일반적인 예외 -> 구체적인 "예외 전환"해서
+		//	예외 상황에서의 상황 정보를 담고 있는 것이 좋
 		result = num1 / num2;
+		} catch (ArithmeticException e) {
+			//	구체적인 예외 전환 바깥으로 throw
+			System.err.print("예외의 전환");
+			throw new CustomArithmeticException("사용자 정의 예외",
+					num1, num2);
+		}
 		return result;
 	}
 
