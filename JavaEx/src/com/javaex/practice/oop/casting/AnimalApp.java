@@ -1,4 +1,4 @@
-package com.javaex.oop.casting;
+package com.javaex.practice.oop.casting;
 
 public class AnimalApp {
 
@@ -28,15 +28,17 @@ public class AnimalApp {
 		
 		pet.eat();
 		pet.walk();
-		// cat은 dog로 converting이 안됨
+		//	cat은 dog로 converting이 안됨
 		
 		//	중요: 다운 캐스팅시, 실제 객체를 확인해야 할 필요
-		//	instanceof 연산자 활용 
-		if (pet instanceof Dog) {	//	pet이 Dog클래스의 인스턴스?) 
+		//	instanceof 연산자 활용	
+		if (pet instanceof Dog) { // pet이 Dog클래스의 인스턴스?
 			((Dog)pet).bark();
 		} else if (pet instanceof Cat) {
 			((Cat)pet).meow();
 		}
+		
 
-}
+	}
+
 }
