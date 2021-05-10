@@ -1,6 +1,7 @@
 package com.javaex.api.arrayclass;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ArrayClassEx {
 
@@ -19,7 +20,13 @@ public class ArrayClassEx {
 		System.out.println("원본 :" + Arrays.toString(nums));
 		//	정렬
 		Arrays.sort(nums);
-		System.out.println("정렬 후:" + Arrays.toString(nums));
+		System.out.println("정렬 후(오름차순):" + Arrays.toString(nums));
+		
+//		nums = new int[] { 5, 6, 3, 2, 4, 1, 7, 9, 8, 10 };
+//		System.out.println("원본 :" + Arrays.toString(nums));
+//		
+//		// 	정렬 내림차순
+//		Arrays.sort(nums, Collections.reverseOrder());
 	}
 	
 	//	배열 내 검색
