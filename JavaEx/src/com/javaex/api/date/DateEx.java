@@ -42,25 +42,25 @@ public class DateEx {
 		case Calendar.SUNDAY:	//	1
 			dowStr = "일요일";
 			break;
-		case Calendar.MONDAY: // 2
+		case Calendar.MONDAY:	//	2
 			dowStr = "월요일";
 			break;
-		case Calendar.THURSDAY:	//	1
+		case Calendar.TUESDAY:	
 			dowStr = "화요일";
 			break;
-		case Calendar.WEDNESDAY: // 2
+		case Calendar.WEDNESDAY:
 			dowStr = "수요일";
 			break;
-		case Calendar.THURSDAY:	//	1
+		case Calendar.THURSDAY:
 			dowStr = "목요일";
 			break;
-		case Calendar.FRIDAY: // 2
+		case Calendar.FRIDAY:
 			dowStr = "금요일";
 			break;
-		case Calendar.SATURDAY: // 2
+		case Calendar.SATURDAY:
 			dowStr = "토요일";
 		}
-		//	요일정보 : sun(1) ~ sat(7)
+		//	요일 정보: SUNDAY (1) ~ SATURDAY (7)
 		System.out.println(dowStr);
 	}
 	
