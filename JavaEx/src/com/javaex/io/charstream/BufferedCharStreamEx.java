@@ -34,7 +34,7 @@ public class BufferedCharStreamEx {
 					System.out.println("Found:" + line);
 					//	출력
 					bw.write(line);;
-					bw.newLine();//	개
+					bw.newLine();//	개행 
 				}
 					
 			}
