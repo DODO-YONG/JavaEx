@@ -50,7 +50,7 @@ public class VectorEx {
 		
 		//	TODO: Loop 개선
 		
-		Enumeration<E> e = v.elements();	//	각 요소에 접근하는 접근자를 추출
+		Enumeration e = v.elements();	//	각 요소에 접근하는 접근자를 추출
 		while(e.hasMoreElements()) {	//	뒤에 요소가 더있는가?
 			System.out.print(e.nextElement() + " ");	//	반복자 이용 접근
 			
