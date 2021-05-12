@@ -4,6 +4,27 @@ public class EnumEx {
 	
 	public static void main(String[] args) {
 		enumEx();
+		enumBasic();
+	}
+	
+	private static void enumBasic() {
+		//	enum의 메서드들
+		Week today = Week.TUESDAY;
+		
+		System.out.printf("Today is %s(%d)%n",
+				today.name(),	//	열거 상수의 문자
+				today.ordinal());	//	순번
+		
+		String dayStr = "FRIDAY";
+		Week other = Week.valueOf(dayStr);	//	문자열 -> 열거상수로 변환
+		
+		System.out.printf("Other is %s (%d)%n", 
+				other.name(),
+				other.ordinal());
+		
+		//	순번 비교
+		int diff = today.compareTo(other);
+		System.out.println("Today와 other의 순번 차: " + diff);
 	}
 	
 	private static void enumEx() {
