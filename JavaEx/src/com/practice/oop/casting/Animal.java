@@ -1,4 +1,4 @@
-package com.javaex.practice.oop.casting;
+package com.practice.oop.casting;
 
 public class Animal {
 	protected String name;
